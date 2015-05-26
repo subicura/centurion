@@ -140,7 +140,7 @@ module Centurion::Deploy
         memo[v.split(/:/).last] = {}
         memo
       end
-      container_config['VolumesFrom'] = 'parent'
+      # container_config['VolumesFrom'] = 'parent'
     end
 
     container_config
