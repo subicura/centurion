@@ -176,13 +176,13 @@ module Centurion
       @host_ip[hostname] = Socket.getaddrinfo(hostname, nil).first[2]
     end
 
-    class RestartPolicy < Struct.new(:name, :max_retry_count)
+    RestartPolicy = Struct.new(:name, :max_retry_count) do
     end
 
-    class Volume < Struct.new(:host_volume, :container_volume)
+    Volume = Struct.new(:host_volume, :container_volume) do
     end
 
-    class PortBinding < Struct.new(:host_port, :container_port, :type, :host_ip)
+    PortBinding = Struct.new(:host_port, :container_port, :type, :host_ip) do
     end
   end
 end
