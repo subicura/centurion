@@ -92,7 +92,7 @@ module Centurion
           memo[v.container_volume] = {}
           memo
         end
-        container_config['VolumesFrom'] = 'parent'
+        # container_config['VolumesFrom'] = 'parent'
       end
 
       container_config
